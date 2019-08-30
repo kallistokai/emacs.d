@@ -1,14 +1,14 @@
-(add-to-list 'load-path "~/.emacs.d/cl-lib/")
+(add-to-list 'load-path "/etc/emacs.d/cl-lib/")
 (require 'cl-lib)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/umlaute-mode/")
+(add-to-list 'load-path "/etc/emacs.d/umlaute-mode/")
 (require 'html-umlaute-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(add-to-list 'load-path "/etc/emacs.d/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
 
@@ -19,7 +19,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/web-mode")
+(add-to-list 'load-path "/etc/emacs.d/web-mode")
 (require 'web-mode)
 
 (setq web-mode-engines-alist
@@ -156,20 +156,11 @@
 
 
 
-;; Python stuff
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
-
-(package-initialize)
-(elpy-enable)
-;;(elpy-use-ipython) ;; deprecated
-;; (elpy-clean-modeline) ;; error
 
 
 
 
 ;; YAML mode
-(add-to-list 'load-path "~/.emacs.d/yaml-mode")
+(add-to-list 'load-path "/etc/emacs.d/yaml-mode")
 (require 'yaml-mode)
     (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
