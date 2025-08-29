@@ -106,7 +106,7 @@
 (setq cperl-invalid-face (quote off))
 
 (setq linum-format "%d   ")
-(global-linum-mode 1)
+(global-display-line-numbers-mode)
 (set-default 'truncate-lines t)
 
 
