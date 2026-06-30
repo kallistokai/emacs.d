@@ -164,3 +164,8 @@
 (add-to-list 'load-path "/etc/emacs.d/yaml-mode")
 (require 'yaml-mode)
     (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
+
+
+# enable Visual Line Mode by default
+(global-visual-line-mode t)
